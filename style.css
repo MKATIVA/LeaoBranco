@@ -9,7 +9,6 @@
   text-decoration: none;
 }
 
-
 header {
   background-color: #0a0538a6;
   padding: 10px 0;
@@ -120,20 +119,21 @@ header {
 }
 
 .animacao-botao {
+  position: absolute;
   width: 30px;
   height: 50px;
   border-radius: 20px;
   background-color: #ffffff;
   text-align: center;
-  transform: translate(50%, -180%);
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  position: relative;
+  bottom: -250px;
 }
 
 .bolinha {
+  position: absolute;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -162,6 +162,7 @@ footer {
   align-items: center;
   text-align: center;
   padding: 7vh;
+  height: 20vh;
 }
 
 footer img {
@@ -201,6 +202,19 @@ footer p span strong {
 }
 
 @media (max-width: 480px) {
+  .tela-inicial {
+    position: relative;
+    height: 80vh;
+    background-image: url(BG-2.webp);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    isolation: isolate;
+    overflow: hidden;
+    z-index: -1;
+  }
+
   .logo {
     display: flex;
     justify-content: center;
@@ -263,14 +277,13 @@ footer p span strong {
 
   .foto {
     position: absolute;
-    width: 530px;
-    top: 500px;
+    top: 350px;
+    left: -50px;
   }
 
-  .foto img {
-    width: 530px;
-    left: -50px;
-    top: -250px;
+  .tela-inicial::after {
+    background-color: #dda200;
+    top: 250px;
   }
 
 }
@@ -355,7 +368,8 @@ footer p span strong {
     margin: 30px;
     text-align: center;
   }
-  .foto h1{
+
+  .foto h1 {
     display: none;
   }
 
