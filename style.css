@@ -154,7 +154,7 @@ header {
 }
 
 footer {
-  border-top: 3px solid #BA8A0D;
+  border-top: 2px solid #BA8A0D;
   background-color: rgb(10, 5, 56);
   color: #fff;
   display: flex;
@@ -162,12 +162,11 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 7vh;
-  height: 20vh;
+  height: 35vh;
 }
 
 footer img {
-  margin: 20px;
+  margin: 10px;
 }
 
 footer p strong {
