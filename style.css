@@ -154,6 +154,7 @@ header {
 }
 
 footer {
+  border-top: #BA8A0D;
   background-color: rgb(10, 5, 56);
   color: #fff;
   display: flex;
