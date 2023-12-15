@@ -26,6 +26,10 @@ header {
   z-index: 999;
 }
 
+.logo h3 {
+  display: none;
+}
+
 .menu ul {
   list-style: none;
   display: flex;
@@ -52,82 +56,6 @@ header {
   cursor: pointer;
   z-index: 999;
 }
-
-@media (max-width: 480px) {
-  .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .logo img {
-    margin: 0 10px;
-  }
-
-  .logo h3 {
-    color: #d31010;
-    padding: 0 5px;
-    text-transform: uppercase;
-    font-size: 25px;
-  }
-
-
-  .menu {
-    flex-direction: column;
-    position: absolute;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    top: 60px;
-    left: 0;
-    right: 0;
-    background-color: #0a0538dc;
-    display: none;
-  }
-
-  .menu.show {
-    display: flex;
-  }
-
-  .menu ul {
-    flex-direction: column;
-  }
-
-  .menu li {
-    margin: 0;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-
-  .menu li a {
-    font-size: 20px;
-  }
-
-  .hamburguer-menu {
-    display: block;
-    margin: 0 10px;
-  }
-
-  .logo {
-    margin: 30px;
-    text-align: center;
-  }
-
-  .foto {
-    position: absolute;
-    width: 530px;
-    top: 500px;
-  }
-
-  .foto img {
-    width: 530px;
-    left: -50px;
-    top: 500px;
-  }
-
-}
-
 
 .tela-inicial {
   position: relative;
@@ -165,15 +93,17 @@ header {
   transform: rotate(-1deg);
 }
 
-.tela-inicial h1 {
+.foto h1 {
+  display: flex;
   position: absolute;
   color: #fff;
   left: 500px;
-  font-size: 50px;
+  font-size: 90px;
+  top: -50px;
   text-transform: uppercase;
 }
 
-.tela-inicial strong {
+.foto strong {
   position: relative;
   color: #0B0825;
 }
@@ -270,11 +200,7 @@ footer p span strong {
   color: #fff;
 }
 
-
-@media (max-width: 1500px) {}
-
-@media all and (max-width: 768px) {
-
+@media (max-width: 480px) {
   .logo {
     display: flex;
     justify-content: center;
@@ -286,7 +212,7 @@ footer p span strong {
   }
 
   .logo h3 {
-    color: #fff;
+    color: #ffffff;
     padding: 0 5px;
     text-transform: uppercase;
     font-size: 25px;
@@ -344,10 +270,93 @@ footer p span strong {
   .foto img {
     width: 530px;
     left: -50px;
-    top: 500px;
+    top: -250px;
   }
+
 }
 
-@media all and (max-width: 600px) {}
+@media (max-width: 768px) {
 
-@media all and (max-width: 480px) {}
+  header {
+    background-color: #0a0538a6;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo h3 {
+    display: block;
+    color: #ffffff;
+    padding: 0 5px;
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+
+  .logo img {
+    margin: 0 10px;
+  }
+
+  .logo h3 {
+    color: #ffffff;
+    padding: 0 5px;
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #0a0538dc;
+    display: none;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu li {
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .menu li a {
+    font-size: 20px;
+  }
+
+  .hamburguer-menu {
+    display: block;
+    margin: 0 10px;
+  }
+
+  .logo {
+    margin: 30px;
+    text-align: center;
+  }
+  .foto h1{
+    display: none;
+  }
+
+}
