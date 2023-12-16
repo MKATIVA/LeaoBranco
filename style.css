@@ -219,12 +219,11 @@ footer p span strong {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px;
     text-align: center;
   }
 
   .logo img {
-    margin: 0 10px;
+    z-index: 999;
   }
 
   .logo h3,
@@ -272,6 +271,8 @@ footer p span strong {
   .hamburguer-menu {
     display: block;
     margin: 0 10px;
+    position: absolute;
+    right: 10px;
   }
 
   .foto {
