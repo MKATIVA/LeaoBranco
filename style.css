@@ -201,6 +201,35 @@ footer p span strong {
   color: #fff;
 }
 
+#QuemSouEu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini {
+  text-align: center;
+  margin: 20px;
+}
+
+.mini p {
+  text-align: justify;
+  max-width: 600px;
+  text-indent: 70px;
+}
+
+.container img {
+  width: 500px;
+}
+
 @media (max-width: 480px) {
   .tela-inicial {
     position: relative;
@@ -284,6 +313,41 @@ footer p span strong {
   .tela-inicial::after {
     background-color: #dda200;
     top: 250px;
+  }
+
+  #QuemSouEu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mini {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .mini p {
+    text-align: justify;
+    max-width: 400px;
+    text-indent: 40px;
+    margin-top: 10px;
+  }
+
+  .container img {
+    width: 300px;
+  }
+
+  footer p{
+    max-width: 300px;    
   }
 }
 
