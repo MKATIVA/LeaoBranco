@@ -163,7 +163,8 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 38vh;
+  height: auto;
+  padding: 20px;
 }
 
 footer img {
@@ -483,12 +484,12 @@ footer p span strong {
     width: 300px;
   }
 
-  es footer p {
+  footer p {
     max-width: 300px;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px){
 
   .tela-inicial {
     position: relative;
