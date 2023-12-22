@@ -3,7 +3,8 @@
 * {
   margin: 0;
   padding: 0;
-      font-family: 'Times New Roman', Times, serif; sans-serif;
+  font-family: 'Times New Roman', Times, serif;
+  sans-serif;
   user-select: none;
   list-style: none;
   text-decoration: none;
@@ -360,6 +361,7 @@ footer p span strong {
     max-width: 300px;
   }
 }
+
 @media (max-width: 480px) {
   .tela-inicial {
     position: relative;
@@ -468,12 +470,14 @@ footer p span strong {
     text-align: center;
     margin: 7px;
   }
+
   .mini p {
     text-align: justify;
     max-width: 400px;
     text-indent: 40px;
     margin-top: 10px;
   }
+
   .container img {
     width: 300px;
   }
@@ -482,11 +486,12 @@ footer p span strong {
     max-width: 300px;
   }
 }
+
 @media (max-width: 768px) {
 
   .tela-inicial {
     position: relative;
-    height: 80vh;
+    height: 100vh;
     background-image: url(BG-2.webp);
     background-repeat: no-repeat;
     display: flex;
@@ -572,5 +577,44 @@ footer p span strong {
   .tela-inicial::after {
     background-color: #dda200;
     top: 250px;
+  }
+
+  #QuemSouEu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mini h1 {
+    font-size: 30px;
+  }
+
+  .mini {
+    text-align: center;
+    margin: 7px;
+  }
+
+  .mini p {
+    text-align: justify;
+    max-width: 400px;
+    text-indent: 40px;
+    margin-top: 10px;
+  }
+
+  .container img {
+    width: 300px;
+  }
+
+  footer p {
+    max-width: 300px;
   }
 }
