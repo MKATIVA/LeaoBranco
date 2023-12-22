@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+      font-family: 'Times New Roman', Times, serif; sans-serif;
   user-select: none;
   list-style: none;
   text-decoration: none;
@@ -218,19 +218,148 @@ footer p span strong {
 .mini {
   text-align: center;
   margin: 20px;
+}
+
+.mini h1 {
   text-transform: uppercase;
+  font-size: 40px;
 }
 
 .mini p {
   text-align: justify;
   max-width: 600px;
   text-indent: 70px;
+  font-size: 19px;
 }
 
 .container img {
   width: 500px;
 }
 
+@media (max-width: 360px) {
+  .tela-inicial {
+    position: relative;
+    height: 80vh;
+    background-image: url(BG-2.webp);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    isolation: isolate;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo img {
+    z-index: 999;
+  }
+
+  .logo h3,
+  .logo span {
+    display: flex;
+    color: #ffffff;
+    padding: 0 5px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #0a0538dc;
+    display: none;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu li {
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .menu li a {
+    font-size: 20px;
+  }
+
+  .hamburguer-menu {
+    display: block;
+    margin: 0 10px;
+    position: absolute;
+    right: 10px;
+  }
+
+  .foto {
+    position: absolute;
+    top: 350px;
+    left: -50px;
+  }
+
+  .tela-inicial::after {
+    background-color: #dda200;
+    top: 250px;
+  }
+
+  #QuemSouEu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mini h1 {
+    font-size: 30px;
+  }
+
+  .mini {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .mini p {
+    text-align: justify;
+    max-width: 400px;
+    text-indent: 40px;
+    margin-top: 10px;
+  }
+
+  .container img {
+    width: 300px;
+  }
+
+  footer p {
+    max-width: 300px;
+  }
+}
 @media (max-width: 480px) {
   .tela-inicial {
     position: relative;
@@ -331,18 +460,20 @@ footer p span strong {
     align-items: center;
   }
 
-  .mini {
-    text-align: center;
-    margin: 20px;
+  .mini h1 {
+    font-size: 30px;
   }
 
+  .mini {
+    text-align: center;
+    margin: 7px;
+  }
   .mini p {
     text-align: justify;
     max-width: 400px;
     text-indent: 40px;
     margin-top: 10px;
   }
-
   .container img {
     width: 300px;
   }
@@ -351,7 +482,6 @@ footer p span strong {
     max-width: 300px;
   }
 }
-
 @media (max-width: 768px) {
 
   .tela-inicial {
