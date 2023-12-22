@@ -218,6 +218,7 @@ footer p span strong {
 .mini {
   text-align: center;
   margin: 20px;
+  text-transform: uppercase;
 }
 
 .mini p {
@@ -346,8 +347,8 @@ footer p span strong {
     width: 300px;
   }
 
-  footer p{
-    max-width: 300px;    
+  footer p {
+    max-width: 300px;
   }
 }
 
