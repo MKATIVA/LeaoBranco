@@ -99,12 +99,13 @@ h3 {
   color: #ffffff;
 }
 
-.logo{
+.logo {
   position: absolute;
   bottom: 75px;
   width: 70px;
 }
-.pagInicial{
+
+.pagInicial {
   position: absolute;
   bottom: 70px;
   right: 20px;
@@ -112,22 +113,26 @@ h3 {
   justify-content: center;
   text-align: center;
 }
-.pagInicial i{
+
+.pagInicial i {
   font-size: 50px;
   z-index: 999;
   color: #eee;
 }
+
 .pagInicial:hover i,
-.pagInicial:hover span{
+.pagInicial:hover span {
   color: #e6bc01;
 }
-.pagInicial a{
+
+.pagInicial a {
   font-size: 20px;
   z-index: 999;
   color: #eee;
   text-decoration: none;
 }
-.pagInicial span{
+
+.pagInicial span {
   display: block;
 }
 
@@ -148,95 +153,101 @@ footer a {
   font-weight: 400;
 }
 
-@media (max-width: 480px){
-  
-    h3 {
-      font-size: 20px;
-    }
-  
-    #music-image {
-      width: 180px;
-      height: auto;
-    }
-  
-    #playlist {
-      font-size: 18px;
-    }
+@media (max-width: 480px) {
 
-    .logo {
-      width: 60px;
-    }
-  
-    .pagInicial i {
-      font-size: 30px;
-    }
-  
-    .pagInicial a {
-      font-size: 15px;
-    }
-    .pagInicial span {
-      display: block;
-    }
-  
-    footer {
-      width: 100%;
-      height: 50px;
-    }
-  
-    footer a {
-      color: #eee;
-      text-decoration: none;
-      text-align: center;
-      font-weight: 400;
-      font-size: 12px;
-    }
-    footer strong {
-      color: #e6bc01;
-      text-decoration: none;
-      text-align: center;
-      font-weight: 400;
-      font-size: 12px;
-    }
+  h3 {
+    font-size: 20px;
+  }
+
+  #music-image {
+    width: 180px;
+    height: auto;
+  }
+
+  #playlist {
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 60px;
+    bottom: 50px;
+  }
+
+  .pagInicial i {
+    font-size: 30px;
+  }
+
+  .pagInicial a {
+    font-size: 15px;
+  }
+
+  .pagInicial span {
+    display: block;
+  }
+
+  footer {
+    width: 100%;
+    height: 50px;
+  }
+
+  footer a {
+    color: #eee;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  footer strong {
+    color: #e6bc01;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+  }
 }
-@media (min-width: 481px) and (max-width: 768px){
-  
-    h3 {
-      font-size: 20px;
-    }
-  
-    #music-image {
-      width: 180px;
-      height: auto;
-    }
-  
-    #playlist {
-      font-size: 18px;
-    }
 
-    .logo {
-      width: 60px;
-    }
-  
-    .pagInicial i {
-      font-size: 30px;
-    }
-  
-    .pagInicial a {
-      font-size: 15px;
-    }
-    .pagInicial span {
-      display: block;
-    }
-  
-    footer {
-      width: 100%;
-      height: 50px;
-    }
-  
-    footer a {
-      color: #eee;
-      text-decoration: none;
-      text-align: center;
-      font-weight: 400;
-    }
+@media (min-width: 481px) and (max-width: 768px) {
+
+  h3 {
+    font-size: 20px;
+  }
+
+  #music-image {
+    width: 180px;
+    height: auto;
+  }
+
+  #playlist {
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 60px;
+    bottom: 50px;
+  }
+
+  .pagInicial i {
+    font-size: 30px;
+  }
+
+  .pagInicial a {
+    font-size: 15px;
+  }
+
+  .pagInicial span {
+    display: block;
+  }
+
+  footer {
+    width: 100%;
+    height: 50px;
+  }
+
+  footer a {
+    color: #eee;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+  }
 }
