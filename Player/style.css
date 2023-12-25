@@ -149,6 +149,48 @@ footer a {
   font-weight: 400;
 }
 
+@media (max-width: 480px){
+  
+    h3 {
+      font-size: 20px;
+    }
+  
+    #music-image {
+      width: 180px;
+      height: auto;
+    }
+  
+    #playlist {
+      font-size: 18px;
+    }
+
+    .logo {
+      width: 60px;
+    }
+  
+    .pagInicial i {
+      font-size: 30px;
+    }
+  
+    .pagInicial a {
+      font-size: 15px;
+    }
+    .pagInicial span {
+      display: block;
+    }
+  
+    footer {
+      width: 100%;
+      height: 50px;
+    }
+  
+    footer a {
+      color: #eee;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 400;
+    }
+}
 @media (min-width: 481px) and (max-width: 768px){
   
     h3 {
