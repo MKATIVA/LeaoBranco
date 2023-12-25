@@ -189,6 +189,14 @@ footer a {
       text-decoration: none;
       text-align: center;
       font-weight: 400;
+      font-size: 12px;
+    }
+    footer strong {
+      color: #e6bc01;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 400;
+      font-size: 12px;
     }
 }
 @media (min-width: 481px) and (max-width: 768px){
